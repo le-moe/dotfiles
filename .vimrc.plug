@@ -1,0 +1,30 @@
+call plug#begin('~/.vim/plugged')
+
+"Fugitive Vim Github Wrapper
+Plug 'tpope/vim-fugitive'
+
+"Nerd tree
+Plug 'scrooloose/nerdtree'
+
+"YouCompleteMe
+Plug 'Valloric/YouCompleteMe'
+
+" Kuroi - Color theme"
+Plug 'aonemd/kuroi.vim'
+
+"Follow hyper link in markdown syntax (README.md)
+Plug 'https://github.com/prashanthellina/follow-markdown-links'
+
+" change behavior of 'change in next (' "
+Plug 'wellle/targets.vim'
+
+" file manager - Ranger
+Plug 'francoiscabrol/ranger.vim'
+
+" Comment stuff - Tim Pope
+Plug 'tpope/vim-commentary'
+
+" Power line
+Plug 'powerline/powerline'
+
+call plug#end()
