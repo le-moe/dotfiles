@@ -95,6 +95,18 @@ vnoremap <F1> :set invfullscreen<CR>
 nnoremap o o<Esc>
 nnoremap O O<Esc>
 
+" delete with d wont save the content to the buffer
+nnoremap d "_d
+vnoremap d "_d
+" nnoremap D "_D
+" vnoremap D "_D
+
+nnoremap <leader>d ""d
+vnoremap <leader>d ""d
+" nnoremap <leader>D ""D
+" vnoremap <leader>D ""D
+
+
 " Insert newline without entering insert mode and stay on the current line
 nmap <S-Enter> Oj
 nmap <CR> ok
@@ -185,3 +197,9 @@ endif
 
 " color scheme
 colo kuroi
+
+" bind fuzzy finder to ;
+map ; :Files<CR>
+
+" shortcut for ysWf:    hello  ysWfprint<cr>     print("hello")
+map µ ysWf

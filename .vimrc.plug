@@ -3,6 +3,12 @@ call plug#begin('~/.vim/plugged')
 "Fugitive Vim Github Wrapper
 Plug 'tpope/vim-fugitive'
 
+" Surround - cs"' change surrounding " for '
+Plug 'tpope/vim-surround'
+
+" Comment stuff - Tim Pope
+Plug 'tpope/vim-commentary'
+
 "Nerd tree
 Plug 'scrooloose/nerdtree'
 
@@ -21,10 +27,14 @@ Plug 'wellle/targets.vim'
 " file manager - Ranger
 Plug 'francoiscabrol/ranger.vim'
 
-" Comment stuff - Tim Pope
-Plug 'tpope/vim-commentary'
-
 " Power line
 Plug 'powerline/powerline'
 
+" Status line
+Plug 'itchyny/lightline.vim'
+
+" multi cursor
+Plug 'terryma/vim-multiple-cursors'
+
 call plug#end()
+
