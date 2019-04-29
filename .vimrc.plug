@@ -34,7 +34,13 @@ Plug 'powerline/powerline'
 Plug 'itchyny/lightline.vim'
 
 " multi cursor
-Plug 'terryma/vim-multiple-cursors'
+" Plug 'terryma/vim-multiple-cursors'
+
+" syntax highligth JavaScript
+Plug 'pangloss/vim-javascript'
+
+" Fuzzy Finder - smart and quick search
+Plug 'vim-scripts/FuzzyFinder'
 
 call plug#end()
 

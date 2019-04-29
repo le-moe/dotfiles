@@ -18,6 +18,7 @@ set modelines=0
 
 " Show line numbers
 set number
+set relativenumber
 
 " Disables autocommenting on new lines
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -58,7 +59,7 @@ set backspace=indent,eol
 set matchpairs+=<:> " use % to jump between pairs
 runtime! macros/matchit.vim
 
-" Move up/down editor lines
+" move vertically in long line
 nnoremap j gj
 nnoremap k gk
 
@@ -108,8 +109,10 @@ vnoremap <leader>d ""d
 
 
 " Insert newline without entering insert mode and stay on the current line
-nmap <S-Enter> Oj
-nmap <CR> ok
+" nmap <S-Enter> Oj
+nmap <CR> koj
+
+
 
 " toogle NerdTree
 nmap <F6> :NERDTreeToggle<CR>
@@ -203,3 +206,9 @@ map ; :Files<CR>
 
 " shortcut for ysWf:    hello  ysWfprint<cr>     print("hello")
 map µ ysWf
+
+" stop autowrapping of long lines
+set textwidth=0
+set wrapmargin=0
+
+
