@@ -39,6 +39,9 @@ Plug 'itchyny/lightline.vim'
 " syntax highligth JavaScript
 Plug 'pangloss/vim-javascript'
 
+" L9 library for FF
+Plug 'vim-scripts/L9'
+
 " Fuzzy Finder - smart and quick search
 Plug 'vim-scripts/FuzzyFinder'
 
