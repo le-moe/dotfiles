@@ -43,7 +43,8 @@ set clipboard=unnamedplus
 
 " Whitespace
 set wrap
-set textwidth=79
+set textwidth=0
+set wrapmargin=0
 set formatoptions=tcqrn1
 set tabstop=2
 set shiftwidth=2
@@ -55,7 +56,7 @@ highlight BadWhitespace ctermbg=red guibg=darkred
 
 " Cursor motion
 set scrolloff=3
-set backspace=indent,eol
+set backspace=indent,eol,start
 set matchpairs+=<:> " use % to jump between pairs
 runtime! macros/matchit.vim
 
@@ -211,4 +212,18 @@ map µ ysWf
 set textwidth=0
 set wrapmargin=0
 
+"quick window switch
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
 
+" natural window split
+set splitbelow
+set splitright
+
+" set path for :find myfile.txt
+set path=.,usr/include,/opt/odoo12,**
+
+" store swap file in a single local directory
+set directory=~/.vim/swap,.

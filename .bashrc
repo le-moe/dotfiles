@@ -117,3 +117,7 @@ if ! shopt -oq posix; then
 fi
 
 export EDITOR=vim
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export PYTHONPATH="${PYTHONPATH}:/opt/odoo12"

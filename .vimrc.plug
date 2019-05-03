@@ -19,7 +19,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'aonemd/kuroi.vim'
 
 "Follow hyper link in markdown syntax (README.md)
-Plug 'https://github.com/prashanthellina/follow-markdown-links'
+Plug 'prashanthellina/follow-markdown-links'
 
 " change behavior of 'change in next (' "
 Plug 'wellle/targets.vim'
@@ -44,6 +44,12 @@ Plug 'vim-scripts/L9'
 
 " Fuzzy Finder - smart and quick search
 Plug 'vim-scripts/FuzzyFinder'
+
+" Xml
+Plug 'sukima/xmledit'
+
+" python linter
+Plug 'nvie/vim-flake8'
 
 call plug#end()
 
