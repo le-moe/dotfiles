@@ -39,7 +39,7 @@ set encoding=utf-8
 set ignorecase
 
 " share vim and system clipboard
-set clipboard=unnamedplus
+" set clipboard=unnamedplus
 
 " Whitespace
 set wrap
@@ -94,24 +94,24 @@ nnoremap <F1> :set invfullscreen<CR>
 vnoremap <F1> :set invfullscreen<CR>
 
 " add new line without entering insert mode
-nnoremap o o<Esc>
-nnoremap O O<Esc>
+" nnoremap o o<Esc>
+" nnoremap O O<Esc>
 
 " delete with d wont save the content to the buffer
-nnoremap d "_d
-vnoremap d "_d
+" nnoremap d "_d
+" vnoremap d "_d
 " nnoremap D "_D
 " vnoremap D "_D
 
-nnoremap <leader>d ""d
-vnoremap <leader>d ""d
+" nnoremap <leader>d ""d
+" vnoremap <leader>d ""d
 " nnoremap <leader>D ""D
 " vnoremap <leader>D ""D
 
 
 " Insert newline without entering insert mode and stay on the current line
 " nmap <S-Enter> Oj
-nmap <CR> koj
+" nmap <CR> koj
 
 
 
@@ -227,3 +227,8 @@ set path=.,usr/include,/opt/odoo12,**
 
 " store swap file in a single local directory
 set directory=~/.vim/swap,.
+
+" use cword to get the word under the cursor.
+" Search for it in the current directory and all subdirectories.
+" Then it open the quickfix bar
+" map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
