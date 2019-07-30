@@ -21,7 +21,7 @@ set number
 set relativenumber
 
 " Disables autocommenting on new lines
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Show file stats
 set ruler
@@ -45,7 +45,7 @@ set ignorecase
 set wrap
 set textwidth=0
 set wrapmargin=0
-set formatoptions=tcqrn1
+set formatoptions=tc
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
@@ -113,8 +113,6 @@ vnoremap <F1> :set invfullscreen<CR>
 " nmap <S-Enter> Oj
 " nmap <CR> koj
 
-
-
 " toogle NerdTree
 nmap <F6> :NERDTreeToggle<CR>
 
@@ -129,7 +127,7 @@ set listchars=tab:▸\ ,eol:¬
 " Uncomment this to enable by default:
 " set list " To enable by default
 " Or use your leader key + l to toggle on/off
-map <leader>l :set list!<CR> " Toggle tabs and EOL
+" map <leader>l :set list!<CR> " Toggle tabs and EOL
 
 " flag unecessary white space
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
@@ -152,11 +150,11 @@ let g:solarized_termtrans=1
 " $$$$$$$$$$$$$ PYTHON Specific $$$$$$$$$$$$$$$$
 
 " Enable folding
-set foldmethod=indent
-set foldlevel=99
+" set foldmethod=indent
+" set foldlevel=99
 
 " Enable folding with the spacebar
-nnoremap <space> za
+" nnoremap <space> za
 
 " PEP 8 indentation
 au BufNewFile,BufRead *.py
@@ -221,6 +219,9 @@ nnoremap <C-L> <C-W><C-L>
 " natural window split
 set splitbelow
 set splitright
+
+" Disable vim really splitting line automatically (not just visually)
+:set textwidth=0
 
 " set path for :find myfile.txt
 set path=.,usr/include,/opt/odoo12,**
