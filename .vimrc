@@ -93,6 +93,9 @@ inoremap <F1> <ESC>:set invfullscreen<CR>a
 nnoremap <F1> :set invfullscreen<CR>
 vnoremap <F1> :set invfullscreen<CR>
 
+" Paste toggle (disable auto indent)
+" equivalent to set paste, set nopaste
+set pastetoggle=<F3>
 " add new line without entering insert mode
 " nnoremap o o<Esc>
 " nnoremap O O<Esc>
