@@ -34,7 +34,7 @@ Plug 'powerline/powerline'
 Plug 'itchyny/lightline.vim'
 
 " multi cursor
-" Plug 'terryma/vim-multiple-cursors'
+Plug 'terryma/vim-multiple-cursors'
 
 " syntax highligth JavaScript
 Plug 'pangloss/vim-javascript'
@@ -43,7 +43,14 @@ Plug 'pangloss/vim-javascript'
 Plug 'vim-scripts/L9'
 
 " Fuzzy Finder - smart and quick search
-Plug 'vim-scripts/FuzzyFinder'
+" Plug 'vim-scripts/FuzzyFinder'
+
+" Multicursor
+Plug 'terryma/vim-multiple-cursors'
+
+" Fzf
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " Xml
 Plug 'sukima/xmledit'

@@ -85,23 +85,24 @@ unsigned int tabspaces = 4;
 /* bg opacity */
 unsigned int alpha = 0xff;
 
+/* In order to load colors from Xdefaults, simply run xrdb .Xdefaults */
 static const char *colorname[] = {
-	"#1d2021", /* hard contrast: #1d2021 / soft contrast: #32302f previous  #282828"*/
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-	"#ebdbb2", /* previous #ebdbb2 (white txt)*/
+	"#151515", /* hard contrast: #1d2021 / soft contrast: #32302f previous  #282828"*/
+	"#ac4142",
+	"#54FF54",
+	"#f4bf75",
+	"#6a9fb5",
+	"#aa759f",
+	"#75b5aa",
+	"#d0d0d0",
+	"#505050",
+	"#d28445",
+	"#202020",
+	"#303030",
+	"#b0b0b0",
+	"#e0e0e0",
+	"#8f5536",
+	"#f5f5f5", /* previous #ebdbb2 (white txt)*/
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
 	"black",   /* 256 -> bg */

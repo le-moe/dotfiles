@@ -72,6 +72,7 @@ set ttyfast
 
 " Status bar
 set laststatus=2
+set statusline+=%F
 
 " Last line
 set showmode
